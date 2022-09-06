@@ -176,7 +176,7 @@ class XsuiteSimulation(object):
         
         #locating the scn nodes - not used- positions are copyed from the ther program
         #sc_locations, sc_lengths = self.get_sc_locations(twiss_dict['length'], self.n_scnodes, xtrack_elements)
-        s_spacecharge = np.load('/home/pablo/scripts/PIC/s_scnodes.npy')
+        s_spacecharge = np.load('s_scnodes.npy')
         
         #setting the sc_nodes
         xtrack_elements = self.set_the_sc_nodes(s_spacecharge, twiss_dict, xtrack_elements, spcharge_node )
